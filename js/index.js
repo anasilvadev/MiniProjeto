@@ -42,6 +42,10 @@ function inserir() {
         document.getElementById("nUrgentes").appendChild(novo);
     }
 
+     document.getElementById("inserirtexto").value = "";
+    document.getElementById("urgenteCheck").checked = false;
+    document.getElementById("nurgenteCheck").checked = false;
+
 }
 
 function excluirnotaU() {
@@ -86,4 +90,5 @@ function excluirtudoNU() {
         return;
     }
     notas.forEach(n => n.remove());
+
 }
